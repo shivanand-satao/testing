@@ -6,11 +6,38 @@
     <title>Destination Details</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
+        :root {
+            --primary-color: #FF9933;
+            --secondary-color: #138808;
+            --accent-color: #000080;
+            --light-color: #F5F5F5;
+            --dark-color: #333333;
+            --card-background: #ffffff;
+            --card-title-color: #333333;
+            --card-text-color: #555555;
+            --card-link-color: #007bff;
+        }
+        .navbar {
+            background-color: var(--primary-color);
+        }
+        .navbar-brand {
+            color: var(--light-color) !important;
+        }
+        .navbar-nav {
+            margin-left: auto;
+        }
+        .navbar-nav .nav-item .nav-link {
+            color: var(--light-color) !important;
+            transition: all 0.3s ease;
+        }
+        .navbar-nav .nav-item .nav-link:hover {
+            color: #f8c31c; /* Change text color on hover */
+            text-decoration: underline; /* Underline the text on hover */
+        }
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f8f9fa;
         }
-        
         .carousel-container {
             width: 80%; /* Adjust the width as needed */
             margin: 20px auto;
@@ -21,7 +48,6 @@
             padding-top: 50.25%; /* 16:9 Aspect Ratio */
             max-height: 400px; /* Adjust the height as needed */
         }
-        
         .carousel-inner {
             position: absolute;
             top: 0;
@@ -29,20 +55,17 @@
             right: 0;
             bottom: 0;
         }
-        
         .carousel-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             border-radius: 10px;
         }
-        
         h2, h3 {
             color: #000306;
             margin-top: 20px;
             font-weight: bold;
         }
-        
         .info-section {
             margin-top: 20px;
             padding: 30px;
@@ -50,34 +73,56 @@
             border-radius: 10px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-        
         .info-section h3 {
             border-bottom: 2px solid #007bff;
             padding-bottom: 10px;
             margin-bottom: 20px;
             font-size: 1.5rem;
         }
-        
         .info-section p {
             font-size: 1rem;
             line-height: 1.6;
             margin-bottom: 20px;
         }
-        
         .list-group-item {
             background-color: #f8f9fa;
             border: none;
             font-size: 1rem;
             padding: 10px 15px;
         }
-        
         .list-group-item span {
             font-weight: bold;
         }
     </style>
 </head>
 <body>
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">TripTrial</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#destination">Destination</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Maharashtra</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
     <!-- Heading -->
     <div class="container text-center">
         <h2 id="destinationName">Destination Name</h2>
@@ -130,9 +175,71 @@
         <h3>Economic Hub</h3>
         <p>Mumbai, the capital of Maharashtra, is the financial capital of India. The state is also home to major industrial and IT hubs, making it a key player in the country's economy. Maharashtra's agriculture sector is also significant, with the state being a major producer of sugarcane, cotton, and soybeans.</p>
     </div>
+    
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5">
+    <div class="row pt-5">
+      <div class="col-lg-3 col-md-6 mb-5">
+        <a href="" class="navbar-brand">
+          <h1 class="text-primary"><span class="text-white">Trip</span>Trial</h1>
+        </a>
+        <p>Explore the world with TripTrial! Discover top travel destinations, expert tips, and personalized itineraries to make your journey unforgettable. Travel smarter, not harder.</p>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-5">
+        <h5 class="text-primary mb-4">Quick Links</h5>
+        <div class="d-flex flex-column justify-content-start">
+          <a class="text-white-50 mb-2" href="#">Home</a>
+          <a class="text-white-50 mb-2" href="#">Destinations</a>
+          <a class="text-white-50 mb-2" href="#">About</a>
+          <a class="text-white-50 mb-2" href="#">Contact</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-5">
+        <h5 class="text-primary mb-4">Contact</h5>
+        <div class="d-flex flex-column justify-content-start">
+          <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, City, Country</p>
+          <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 6789</p>
+          <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-5">
+        <h5 class="text-primary mb-4">Follow Us</h5>
+        <div class="d-flex">
+          <a class="btn btn-outline-light btn-social me-2" href="#"><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-outline-light btn-social me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-social me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a class="btn btn-outline-light btn-social me-2" href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="destination.js"></script>
 </body>
