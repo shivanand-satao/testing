@@ -1,140 +1,285 @@
-
-
 :root {
-    --primary-color: #FF9933;
-    --secondary-color: #138808;
-    --accent-color: #000080;
-    --light-color: #F5F5F5;
-    --dark-color: #333333;
+  --primary-color: #FF9933;
+  --secondary-color: #138808;
+  --accent-color: #000080;
+  --light-color: #F5F5F5;
+  --dark-color: #333333;
+  --card-background: #ffffff;
+  --card-title-color: #333333;
+  --card-text-color: #555555;
+  --card-link-color: #007bff;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    color: var(--dark-color);
+  font-family: 'Poppins', sans-serif; /* Custom font */
+  color: var(--dark-color);
 }
 
+/* Navbar Styles */
 .navbar {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 .navbar-brand, .nav-link {
-    color: var(--light-color) !important;
-}
-
-.loc{
-    width: 80%;
-    margin-left:160px ;
-    
-}
-.loc img{
-    aspect-ratio: 16/9;
-    
+  color: var(--light-color) !important;
 }
 
 .navbar-nav .nav-item .nav-link {
-    transition: all 0.3s ease;
-  }
+  transition: all 0.3s ease;
+}
 
-  .navbar-nav .nav-item .nav-link:hover {
-    color: #f8c31c; /* Change text color on hover */
-    text-decoration: underline; /* Underline the text on hover */
-  }
+.navbar-nav .nav-item .nav-link:hover {
+  color: #f8c31c; /* Change text color on hover */
+  text-decoration: underline; /* Underline the text on hover */
+}
 
-  /* Optional: add a background color change on hover */
-  .navbar-nav .nav-item:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Slight background change */
-  }
-  body {
-    font-family: 'Poppins', sans-serif; /* Custom font */
-  }
-  
-  .carousel-caption {
-    background: rgba(0, 0, 0, 0.6); /* Darker background for better readability */
-    padding: 25px;
-    border-radius: 15px;
-    animation: fadeInUp 1s ease; /* Smooth caption entry */
-  }
-  
-  .carousel-caption h5 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #f8f9fa; /* Light color for text */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow */
-  }
-  
-  .carousel-caption p {
-    font-size: 1.25rem;
-    color: #f8f9fa; /* Light color for text */
-  }
-  
-  .carousel-inner img {
-    filter: brightness(80%) contrast(110%); /* Slightly darker with higher contrast */
-    transition: transform 0.7s ease-in-out, filter 0.7s ease-in-out; /* Smooth zoom and filter transitions */
-  }
-  
-  .carousel-inner img:hover {
-    transform: scale(1.1); /* More pronounced zoom effect */
-    filter: brightness(90%) contrast(120%); /* Brighter and more contrast on hover */
-  }
-  
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    /* Custom white background for controls */
-    border-radius: 50%; /* Rounded controls */
-    padding: 10px;
-    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5)); /* Drop shadow for depth */
-  }
-  
+/* Carousel Styles */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6); /* Darker background for better readability */
+  padding: 25px;
+  border-radius: 15px;
+  animation: fadeInUp 1s ease; /* Smooth caption entry */
+}
 
-  
+.carousel-caption h5 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f8f9fa; /* Light color for text */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow */
+}
 
-  @keyframes fadeInUp {
-    from {
-      transform: translate3d(0, 40px, 0);
-      opacity: 0;
-    }
-    to {
-      transform: translate3d(0, 0, 0);
-      opacity: 1;
-    }
-  }
-  
-  #about h2 {
-    font-family: 'Poppins', sans-serif;
-    color: #343a40;
-    font-weight: 700;
-    margin-bottom: 30px;
-  }
-  
-  #about p {
-    font-family: 'Roboto', sans-serif;
-    color: #6c757d;
-    line-height: 1.7;
-  }
-  
-  #maharashtraCarousel .carousel-inner img {
-    border-radius: 15px;
-    filter: brightness(85%);
-  }
-  
-  #scrollPages .carousel-inner {
-    border: 1px solid #ddd;
-    border-radius: 15px;
-    background: #fff;
-  }
-  
-  #scrollPages .carousel-inner .carousel-item {
-    min-height: 250px;
-    padding: 20px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  #scrollPages .carousel-inner .carousel-item h5 {
-    color: #007bff;
-    font-weight: 600;
-  }
-  
-  #scrollPages .carousel-inner .carousel-item p {
-    color: #495057;
-  }
-  
+.carousel-caption p {
+  font-size: 1.25rem;
+  color: #f8f9fa; /* Light color for text */
+}
+
+.carousel-inner img {
+  filter: brightness(80%) contrast(110%); /* Slightly darker with higher contrast */
+  transition: transform 0.7s ease-in-out, filter 0.7s ease-in-out; /* Smooth zoom and filter transitions */
+}
+
+.carousel-inner img:hover {
+  transform: scale(1.1); /* More pronounced zoom effect */
+  filter: brightness(90%) contrast(120%); /* Brighter and more contrast on hover */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  /* Custom white background for controls */
+  border-radius: 50%; /* Rounded controls */
+  padding: 10px;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5)); /* Drop shadow for depth */
+}
+
+/* About Section Styles */
+#about h2 {
+  color: #343a40;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+#about p {
+  color: #6c757d;
+  line-height: 1.7;
+}
+
+/* ScrollPages Styles */
+#scrollPages .carousel-inner {
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  background: #fff;
+}
+
+#scrollPages .carousel-inner .carousel-item {
+  min-height: 250px;
+  padding: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#scrollPages .carousel-inner .carousel-item h5 {
+  color: #007bff;
+  font-weight: 600;
+}
+
+#scrollPages .carousel-inner .carousel-item p {
+  color: #495057;
+}
+
+/* Card Styles */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem; /* Space between cards */
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+  transform: scale(1.1); /* Slightly enlarge the card on hover */
+  z-index: 30; /* Ensure hover effect is on top */
+}
+
+.card-img-overlay {
+  position: relative;
+}
+
+.card-img-overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+  z-index: 3;
+}
+
+.card-img-top {
+  position: relative;
+  z-index: 2;
+}
+
+.card-body {
+  position: relative;
+  z-index: 2;
+  background-color: var(--card-background); /* Background color for the card body */
+  color: var(--card-text-color); /* Default text color */
+}
+
+.card-title {
+  font-size: 1.5rem; /* Larger font size for headings */
+  font-weight: 700; /* Bold text */
+  color: var(--card-title-color); /* Title color */
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+}
+
+.card-title.item-2 {
+  color: #e83e8c; /* Unique color for Item 2 */
+  font-style: italic; /* Italic text style */
+  text-transform: uppercase; /* Uppercase text */
+}
+
+.card-title.item-3 {
+  color: #17a2b8; /* Unique color for Item 3 */
+  font-weight: 900; /* Extra bold text */
+  letter-spacing: 1px; /* Increased letter spacing */
+}
+
+.card-text {
+  margin-bottom: 1.5rem;
+}
+
+.card-link {
+  margin-right: 1rem;
+  color: var(--card-link-color); /* Link color */
+}
+
+.card-link:hover {
+  color: #0056b3; /* Darker color on hover */
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004080;
+}
+
+.badge {
+  font-size: 0.75rem;
+  padding: 0.25em 0.4em;
+}
+
+/* Destination Section Styles */
+.destination-section {
+  padding: 2rem;
+  background-color: var(--light-color);
+}
+
+.destination-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 2rem; /* Font size for the title */
+  font-weight: 700; /* Bold text */
+  color: var(black); /* Title color */
+  text-transform: uppercase; /* Uppercase text */
+  margin-bottom: 1.5rem; /* Space below the title */
+}
+
+/* Card Styles */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* Space between cards */
+  justify-content: center; /* Center cards horizontally */
+}
+
+.card-hover {
+  transition: all 0.5s ease;
+}
+
+.card-hover:hover {
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+  transform: scale(1.1); /* Slightly enlarge the card on hover */
+  z-index: 30; /* Ensure hover effect is on top */
+}
+
+.card-img-overlay {
+  position: relative;
+}
+
+.card-img-overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+  z-index: 3;
+}
+
+.card-img-top {
+  position: relative;
+  z-index: 2;
+}
+
+.card-body {
+  position: relative;
+  z-index: 2;
+  background-color: var(--card-background); /* Background color for the card body */
+  color: var(--card-text-color); /* Default text color */
+}
+
+.card-title {
+  font-size: 1.5rem; /* Larger font size for headings */
+  font-weight: 700; /* Bold text */
+  color: var(--card-title-color); /* Title color */
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+}
+
+
+
+.card-text {
+  margin-bottom: 1.5rem;
+}
+
+.card-link {
+  margin-right: 1rem;
+  color: var(--card-link-color); /* Link color */
+}
+
+.card-link:hover {
+  color: #0056b3; /* Darker color on hover */
+}
