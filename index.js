@@ -40,11 +40,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 img.src = firstImageSrc;
                 img.classList.add('d-block', 'w-100');
                 img.alt = `Image of ${destination.name}`;
-                
-                // Add click event to carousel image
-                img.addEventListener('click', function() {
-                    window.location.href = 'blank.html';
-                });
 
                 const carouselCaption = document.createElement('div');
                 carouselCaption.classList.add('carousel-caption', 'd-none', 'd-md-block');
@@ -141,11 +136,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 cardLinks.appendChild(link1);
                 cardLinks.appendChild(link2);
                 card.appendChild(cardLinks);
-
-                // Add click event to card
-                card.addEventListener('click', function() {
-                    window.location.href = 'blank.html';
-                });
 
                 // Append card to the container
                 cardContainer.appendChild(card);

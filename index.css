@@ -13,9 +13,17 @@
 body {
   font-family: 'Poppins', sans-serif; /* Custom font */
   color: var(--dark-color);
+  background-color: #f0f0f0; /* Light gray background color */
 }
 
-/* Navbar Styles */
+.carousel {
+  background: #fff; /* White background for the carousel itself */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 90%;
+  border-radius: 10px; /* Optional: Adds rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
 .navbar {
   background-color: var(--primary-color);
 }
