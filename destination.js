@@ -1,67 +1,89 @@
-document.addEventListener('DOMContentLoaded', function() {
-  // Extract destination ID from the URL
+document.addEventListener("DOMContentLoaded", function() {
   const params = new URLSearchParams(window.location.search);
-  const destinationId = params.get('destination');
+  const destinationId = params.get('destination'); // e.g., "mumbai"
 
-  if (!destinationId) {
-      console.error('No destination specified');
-      return;
-  }
-
-  // Fetch the JSON data
   fetch('index.json')
       .then(response => response.json())
       .then(data => {
-          const destination = data.destinations.find(dest => dest.name.toLowerCase().replace(/\s+/g, '-') === destinationId);
+          const destinations = data.destinations;
+          const destination = destinations.find(dest => dest.name.toLowerCase().replace(/\s+/g, '-') === destinationId);
 
-          if (!destination) {
+          if (destination) {
+              // Populate carousel
+              const carouselIndicators = document.querySelector('.carousel-indicators');
+              const carouselInner = document.querySelector('.carousel-inner');
+
+              // Ensure only unique images in carousel
+              const uniqueImages = [...new Set(destination.image_src)];
+
+              // Clear existing indicators and items
+              carouselIndicators.innerHTML = '';
+              carouselInner.innerHTML = '';
+
+              uniqueImages.forEach((src, index) => {
+                  // Create indicator button
+                  const indicator = document.createElement('li');
+                  indicator.dataset.target = '#destinationCarousel';
+                  indicator.dataset.slideTo = index;
+                  if (index === 0) {
+                      indicator.classList.add('active');
+                  }
+                  carouselIndicators.appendChild(indicator);
+
+                  // Create carousel item
+                  const carouselItem = document.createElement('div');
+                  carouselItem.classList.add('carousel-item');
+                  if (index === 0) {
+                      carouselItem.classList.add('active');
+                  }
+
+                  const img = document.createElement('img');
+                  img.src = src;
+                  img.classList.add('d-block', 'w-100');
+                  img.alt = `Image ${index + 1}`;
+
+                  carouselItem.appendChild(img);
+                  carouselInner.appendChild(carouselItem);
+              });
+
+              // Populate additional details
+              document.getElementById('destinationName').textContent = destination.name;
+              document.getElementById('bestSeason').textContent = destination.best_season;
+
+              // Populate places to visit
+              const placesToVisit = document.getElementById('placesToVisit');
+              destination.places_to_visit.forEach(place => {
+                  const placeItem = document.createElement('li');
+                  placeItem.classList.add('list-group-item');
+                  placeItem.innerHTML = `<strong>${place.name}</strong><br>${place.info}<br><strong>Entry Fee:</strong> ${place.entry_fee}<br><strong>Timings:</strong> ${place.timings}`;
+                  placesToVisit.appendChild(placeItem);
+              });
+
+              // Populate activities
+              const activitiesList = document.getElementById('activitiesList');
+              destination.activities.forEach(activity => {
+                  const activityItem = document.createElement('li');
+                  activityItem.classList.add('list-group-item');
+                  activityItem.textContent = activity;
+                  activitiesList.appendChild(activityItem);
+              });
+
+              // Populate travel tips
+              const travelTipsList = document.getElementById('travelTipsList');
+              destination.travel_tips.forEach(tip => {
+                  const tipItem = document.createElement('li');
+                  tipItem.classList.add('list-group-item');
+                  tipItem.textContent = tip;
+                  travelTipsList.appendChild(tipItem);
+              });
+
+              // Populate emergency contacts
+              document.getElementById('police').textContent = destination.emergency_contacts.police;
+              document.getElementById('ambulance').textContent = destination.emergency_contacts.ambulance;
+              document.getElementById('touristHelpline').textContent = destination.emergency_contacts.tourist_helpline;
+          } else {
               console.error('Destination not found');
-              return;
           }
-
-          // Populate the overview section
-          document.getElementById('bestSeason').textContent = destination.best_season;
-          document.getElementById('averageCost').textContent = destination.average_cost;
-          document.getElementById('duration').textContent = destination.duration;
-          document.getElementById('nearestAirport').textContent = destination.nearest_airport;
-          document.getElementById('nearestRailwayStation').textContent = destination.nearest_railway_station;
-
-          // Populate the image gallery
-          const imageGallery = document.getElementById('imageGallery');
-          imageGallery.innerHTML = ''; // Clear existing images
-          destination.image_src.forEach(src => {
-              const img = document.createElement('img');
-              img.src = src;
-              imageGallery.appendChild(img);
-          });
-
-          // Populate the places to visit
-          const placesList = document.getElementById('placesList');
-          placesList.innerHTML = ''; // Clear existing places
-          destination.places_to_visit.forEach(place => {
-              const placeDiv = document.createElement('div');
-              placeDiv.className = 'place';
-              placeDiv.innerHTML = `<h3>${place.name}</h3><p>${place.info}</p><p><strong>Entry Fee:</strong> ${place.entry_fee}</p><p><strong>Timings:</strong> ${place.timings}</p>`;
-              placesList.appendChild(placeDiv);
-          });
-
-          // Populate activities
-          const activitiesList = document.getElementById('activitiesList');
-          activitiesList.innerHTML = ''; // Clear existing activities
-          destination.activities.forEach(activity => {
-              const activityDiv = document.createElement('div');
-              activityDiv.className = 'activity';
-              activityDiv.textContent = activity;
-              activitiesList.appendChild(activityDiv);
-          });
-
-          // Handle lazy load
-          document.getElementById('loadMore').addEventListener('click', () => {
-              document.getElementById('moreInfo').style.display = 'block';
-              document.getElementById('loadMore').style.display = 'none';
-
-              // Add additional info here...
-          });
       })
       .catch(error => console.error('Error fetching JSON data:', error));
 });

@@ -4,32 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destination Details</title>
-    <script src="destination.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+        
+        .carousel-container {
+            width: 80%; /* Adjust the width as needed */
+            margin: 20px auto;
+            border: 20px solid #e0e0e0; /* Light shade border */
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            padding-top: 50.25%; /* 16:9 Aspect Ratio */
+            max-height: 400px; /* Adjust the height as needed */
+        }
+        
+        .carousel-inner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+        h2, h3 {
+            color: #000306;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        
+        .info-section {
+            margin-top: 20px;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .info-section h3 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .info-section p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .list-group-item {
+            background-color: #f8f9fa;
+            border: none;
+            font-size: 1rem;
+            padding: 10px 15px;
+        }
+        
+        .list-group-item span {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <div id="destinationPage">
-        <h1 id="destinationName"></h1>
-        <section id="overview">
-            <h2>Overview</h2>
-            <p><strong>Best Season:</strong> <span id="bestSeason"></span></p>
-            <p><strong>Average Cost:</strong> <span id="averageCost"></span></p>
-            <p><strong>Duration:</strong> <span id="duration"></span></p>
-            <p><strong>Nearest Airport:</strong> <span id="nearestAirport"></span></p>
-            <p><strong>Nearest Railway Station:</strong> <span id="nearestRailwayStation"></span></p>
-        </section>
-        <section id="imageGallery">
-            <!-- Images will be dynamically added here -->
-        </section>
-        <section id="placesList">
-            <!-- Places to visit will be dynamically added here -->
-        </section>
-        <section id="activitiesList">
-            <!-- Activities will be dynamically added here -->
-        </section>
-        <button id="loadMore">Load More Info</button>
-        <section id="moreInfo" style="display:none;">
-            <!-- Additional info will be added here -->
-        </section>
+
+    <!-- Heading -->
+    <div class="container text-center">
+        <h2 id="destinationName">Destination Name</h2>
     </div>
+
+    <!-- Carousel Section -->
+    <div id="destinationCarousel" class="carousel slide carousel-container" data-ride="carousel">
+        <ol class="carousel-indicators"></ol>
+        <div class="carousel-inner"></div>
+        <a class="carousel-control-prev" href="#destinationCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#destinationCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Info Section -->
+    <div class="container info-section">
+        <h3>Best Season to Visit</h3>
+        <p id="bestSeason"></p>
+
+        <h3>Places to Visit</h3>
+        <ul class="list-group" id="placesToVisit"></ul>
+
+        <h3>Activities</h3>
+        <ul class="list-group" id="activitiesList"></ul>
+
+        <h3>Travel Tips</h3>
+        <ul class="list-group" id="travelTipsList"></ul>
+
+        <h3>Emergency Contacts</h3>
+        <ul class="list-group">
+            <li class="list-group-item">Police: <span id="police"></span></li>
+            <li class="list-group-item">Ambulance: <span id="ambulance"></span></li>
+            <li class="list-group-item">Tourist Helpline: <span id="touristHelpline"></span></li>
+        </ul>
+    </div>
+
+    <!-- New Information Section -->
+    <div class="container info-section">
+        <h3>Maharashtra Cuisine</h3>
+        <p>Maharashtra's cuisine is as diverse as its culture, with a variety of dishes ranging from the spicy misal pav to the sweet puran poli. Street food in cities like Mumbai is particularly famous, with dishes like vada pav and pav bhaji being crowd favorites.</p>
+
+        <h3>Festivals in Maharashtra</h3>
+        <p>Maharashtra is known for its vibrant festivals, with Ganesh Chaturthi being the most widely celebrated. Other festivals like Diwali, Holi, and Makar Sankranti are also celebrated with great enthusiasm, showcasing the state's rich cultural traditions.</p>
+
+        <h3>Economic Hub</h3>
+        <p>Mumbai, the capital of Maharashtra, is the financial capital of India. The state is also home to major industrial and IT hubs, making it a key player in the country's economy. Maharashtra's agriculture sector is also significant, with the state being a major producer of sugarcane, cotton, and soybeans.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="destination.js"></script>
 </body>
 </html>

@@ -72,11 +72,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 const card = document.createElement('div');
                 card.classList.add('card', 'card-hover');
                 card.style.width = '18rem';
+                card.dataset.id = destination.name.toLowerCase().replace(/\s+/g, '-'); // Use a unique identifier based on destination name
 
                 // Card image and badge
                 const cardImgOverlay = document.createElement('div');
                 cardImgOverlay.classList.add('card-img-overlay');
-                
+
                 const img = document.createElement('img');
                 img.src = firstImageSrc;
                 img.classList.add('card-img-top');
@@ -93,11 +94,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Card body
                 const cardBody = document.createElement('div');
                 cardBody.classList.add('card-body');
-                
+
                 const cardTitle = document.createElement('h5');
                 cardTitle.classList.add('card-title');
                 cardTitle.textContent = destination.name;
-                
+
                 const cardText = document.createElement('p');
                 cardText.classList.add('card-text');
                 cardText.textContent = `Places to visit: ${destination.places_to_visit.map(place => place.name).join(', ')}`;
@@ -109,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 // List group items
                 const listGroup = document.createElement('ul');
                 listGroup.classList.add('list-group', 'list-group-flush');
-                
+
                 destination.places_to_visit.forEach(place => {
                     const listItem = document.createElement('li');
                     listItem.classList.add('list-group-item');
@@ -122,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Card links
                 const cardLinks = document.createElement('div');
                 cardLinks.classList.add('card-body');
-                
+
                 const link1 = document.createElement('a');
                 link1.href = '#';
                 link1.classList.add('card-link');
@@ -136,6 +137,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 cardLinks.appendChild(link1);
                 cardLinks.appendChild(link2);
                 card.appendChild(cardLinks);
+
+                // Add event listener for card click to redirect to destination page
+                card.addEventListener('click', () => {
+                    window.location.href = `destination.html?destination=${destination.name.toLowerCase().replace(/\s+/g, '-')}`;
+                });
 
                 // Append card to the container
                 cardContainer.appendChild(card);
