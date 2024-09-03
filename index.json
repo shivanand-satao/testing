@@ -1,0 +1,630 @@
+{
+    "destinations": [
+      {
+        "name": "Mumbai",
+        "best_season": "October to February",
+        "image_src": ["mum1.png", "mum2.png", "mum3.png"],
+        "places_to_visit": [
+          {
+            "name": "Gateway of India",
+            "info": "An iconic landmark overlooking the Arabian Sea.",
+            "entry_fee": "Free",
+            "timings": "24/7"
+          },
+          {
+            "name": "Marine Drive",
+            "info": "A scenic promenade along the coast.",
+            "entry_fee": "Free",
+            "timings": "24/7"
+          }
+        ],
+        "activities": ["City Tours", "Beach Walks", "Shopping"],
+        "average_cost": "1500-3000 INR/day",
+        "duration": "3-5 days",
+        "nearest_airport": "Chhatrapati Shivaji Maharaj International Airport",
+        "nearest_railway_station": "Mumbai Central",
+        "local_cuisine": ["Vada Pav", "Pav Bhaji", "Bhel Puri"],
+        "famous_events": ["Ganesh Chaturthi", "Mumbai Marathon"],
+        "travel_tips": [
+          "Carry a water bottle to stay hydrated.",
+          "Beware of pickpockets in crowded areas."
+        ],
+        "emergency_contacts": {
+          "police": "100",
+          "ambulance": "102",
+          "tourist_helpline": "1800-11-1363"
+        },
+        "popular_hotels": ["Taj Mahal Palace", "The Oberoi", "Trident"],
+        "transportation": ["Local trains", "Buses", "Taxis"],
+        "safety_tips": [
+          "Avoid isolated areas late at night.",
+          "Keep your belongings close in crowded places."
+        ],
+        "accessibility": "Most tourist spots are accessible for people with disabilities, with ramps and special facilities available.",
+        "popular_routes": [
+          "Colaba -> Marine Drive -> Gateway of India",
+          "Juhu Beach -> Bandra Fort -> Bandstand"
+        ],
+        "cultural_etiquette": "Respect local customs, such as removing shoes before entering temples.",
+        "weather_overview": "Mumbai has a tropical climate with high humidity. Monsoons are from June to September."
+      },
+      {
+        "name": "Pune",
+        "best_season": "October to February",
+        "image_src": ["pun1.png", "pun2.png", "pun3.png"],
+        "places_to_visit": [
+          {
+            "name": "Shaniwar Wada",
+            "info": "A historic fortification in the city.",
+            "entry_fee": "5 INR",
+            "timings": "9:00 AM - 6:30 PM"
+          },
+          {
+            "name": "Aga Khan Palace",
+            "info": "A historical monument reflecting the grandeur of the past.",
+            "entry_fee": "15 INR",
+            "timings": "9:00 AM - 5:30 PM"
+          }
+        ],
+        "activities": ["Historical Tours", "Trekking", "Shopping"],
+        "average_cost": "1200-2500 INR/day",
+        "duration": "2-4 days",
+        "nearest_airport": "Pune International Airport",
+        "nearest_railway_station": "Pune Junction",
+        "local_cuisine": ["Misal Pav", "Puran Poli", "Bakarwadi"],
+        "famous_events": ["Pune International Film Festival", "Ganesh Chaturthi"],
+        "travel_tips": [
+          "Book accommodations in advance during festival seasons.",
+          "Use public transport or cabs to navigate the city."
+        ],
+        "emergency_contacts": {
+          "police": "100",
+          "ambulance": "108",
+          "tourist_helpline": "1800-11-1363"
+        },
+        "popular_hotels": ["JW Marriott", "Hyatt Pune", "Conrad Pune"],
+        "transportation": ["Buses", "Auto-rickshaws", "Cabs"],
+        "safety_tips": [
+          "Avoid taking unregistered cabs.",
+          "Stay in well-lit areas after dark."
+        ],
+        "accessibility": "Main tourist spots have ramps and facilities for disabled visitors.",
+        "popular_routes": [
+          "Shivajinagar -> Shaniwar Wada -> Parvati Hill",
+          "Koregaon Park -> Aga Khan Palace -> Osho Ashram"
+        ],
+        "cultural_etiquette": "Dress modestly when visiting religious sites.",
+        "weather_overview": "Pune has a moderate climate with cool winters and hot summers. Monsoons bring moderate rainfall."
+      },
+      {
+        "name": "Nashik",
+        "best_season": "October to February",
+        "image_src": ["nas1.png", "nas2.png", "nas3.png"],
+        "places_to_visit": [
+          {
+            "name": "Sula Vineyard",
+            "info": "Famous for its wine tasting and beautiful vineyard tours.",
+            "entry_fee": "Varies by tour",
+            "timings": "10:00 AM - 6:00 PM"
+          },
+          {
+            "name": "Kalaram Temple",
+            "info": "A significant temple dedicated to Lord Rama.",
+            "entry_fee": "Free",
+            "timings": "6:00 AM - 8:00 PM"
+          }
+        ],
+        "activities": ["Wine Tasting", "Temple Visits", "Trekking"],
+        "average_cost": "1000-2500 INR/day",
+        "duration": "2-3 days",
+        "nearest_airport": "Gandhinagar Airport",
+        "nearest_railway_station": "Nashik Road",
+        "local_cuisine": ["Misal Pav", "Pithla Bhakri", "Vada Pav"],
+        "famous_events": ["Sula Fest", "Kumbh Mela"],
+        "travel_tips": [
+          "Carry comfortable shoes for trekking.",
+          "Be cautious about the weather during monsoon season."
+        ],
+        "emergency_contacts": {
+          "police": "100",
+          "ambulance": "108",
+          "tourist_helpline": "1800-11-1363"
+        },
+        "popular_hotels": ["The Gateway Hotel", "Ibis Nashik", "Ramada by Wyndham"],
+        "transportation": ["Buses", "Auto-rickshaws", "Cabs"],
+        "safety_tips": [
+          "Avoid traveling alone in isolated areas.",
+          "Keep your belongings secure."
+        ],
+        "accessibility": "Major tourist attractions are accessible, but some areas may require additional assistance.",
+        "popular_routes": [
+          "Sula Vineyard -> Kalaram Temple -> Pandav Leni Caves",
+          "Godavari River -> Gargoti Museum"
+        ],
+        "cultural_etiquette": "Respect local religious practices and dress modestly while visiting temples.",
+        "weather_overview": "Nashik has a moderate climate with cool winters and a rainy monsoon season from June to September."
+      },
+      {
+        "name": "Aurangabad",
+        "best_season": "October to March",
+        "image_src": ["au1.png", "au1.png", "au3.png"],
+        "places_to_visit": [
+          {
+            "name": "Ajanta Caves",
+            "info": "Famous for their Buddhist rock-cut caves and paintings.",
+            "entry_fee": "40 INR (Indian citizens), 600 INR (Foreigners)",
+            "timings": "9:00 AM - 5:30 PM"
+          },
+          {
+            "name": "Ellora Caves",
+            "info": "Known for their rock-cut temples and monasteries.",
+            "entry_fee": "40 INR (Indian citizens), 600 INR (Foreigners)",
+            "timings": "9:00 AM - 5:30 PM"
+          }
+        ],
+        "activities": ["Historical Tours", "Exploring Caves", "Shopping"],
+        "average_cost": "1500-3000 INR/day",
+        "duration": "2-4 days",
+        "nearest_airport": "Aurangabad Airport",
+        "nearest_railway_station": "Aurangabad Railway Station",
+        "local_cuisine": ["Kharis", "Tandoori Chicken", "Bhakri"],
+        "famous_events": ["Ellora Festival", "Ajanta Festival"],
+        "travel_tips": [
+          "Hire a local guide for better insights into historical sites.",
+          "Carry sunscreen and stay hydrated."
+        ],
+        "emergency_contacts": {
+          "police": "100",
+          "ambulance": "108",
+          "tourist_helpline": "1800-11-1363"
+        },
+        "popular_hotels": ["Vivanta Aurangabad", "The Lalit", "Hotel Rangoli"],
+        "transportation": ["Buses", "Auto-rickshaws", "Cabs"],
+        "safety_tips": [
+          "Follow local guidelines while visiting historical sites.",
+          "Avoid traveling alone in unfamiliar areas."
+        ],
+        "accessibility": "Most major tourist sites are accessible, but some caves may require additional assistance.",
+        "popular_routes": [
+          "Aurangabad City -> Ajanta Caves -> Ellora Caves",
+          "Bibi Ka Maqbara -> Panchakki"
+        ],
+        "cultural_etiquette": "Respect the local heritage and follow site-specific rules.",
+        "weather_overview": "Aurangabad experiences a hot summer, moderate monsoon, and cool winter."
+      },
+      {
+        "name": "Lonavala",
+        "best_season": "June to September",
+        "image_src": ["lon1.png", "lon2.png", "lon3.png"],
+        "places_to_visit": [
+          {
+            "name": "Lonavala Lake",
+            "info": "A serene lake ideal for picnics and relaxation.",
+            "entry_fee": "Free",
+            "timings": "6:00 AM - 6:00 PM"
+          },
+          {
+            "name": "Bhushi Dam",
+            "info": "Popular for its waterfall and dam views.",
+            "entry_fee": "Free",
+            "timings": "6:00 AM - 6:00 PM"
+          }
+        ],
+        "activities": ["Nature Walks", "Picnicking", "Trekking"],
+        "average_cost": "1000-2000 INR/day",
+        "duration": "1-2 days",
+        "nearest_airport": "Pune International Airport",
+        "nearest_railway_station": "Lonavala Railway Station",
+        "local_cuisine": ["Chikki", "Vada Pav", "Pithla Bhakri"],
+        "famous_events": ["Lonavala Carnival"],
+        "travel_tips": [
+          "Carry rain gear during the monsoon season.",
+          "Book accommodations in advance during peak seasons."
+        ],
+        "emergency_contacts": {
+          "police": "100",
+          "ambulance": "108",
+          "tourist_helpline": "1800-11-1363"
+        },
+        "popular_hotels": ["Hilton Shillim Estate Retreat & Spa", "The Machan", "Fariyas Resort"],
+        "transportation": ["Buses", "Auto-rickshaws", "Cabs"],
+        "safety_tips": [
+          "Be cautious while trekking during the monsoon season.",
+          "Follow safety guidelines at popular spots like dams and lakes."
+        ],
+        "accessibility": "Popular tourist spots are accessible, but some trekking paths may require careful navigation.",
+        "popular_routes": [
+          "Lonavala Lake -> Bhushi Dam -> Tiger's Leap",
+          "Rajmachi Fort -> Karla Caves"
+        ],
+        "cultural_etiquette": "Respect the local environment and avoid littering.",
+        "weather_overview": "Lonavala experiences heavy rainfall during monsoons and pleasant weather during winters."
+      },
+      {
+        "name": "Mahabaleshwar",
+        "best_season": "March to June",
+        "image_src": ["mah1.png", "mah2.png", "mah3.png"],
+        "places_to_visit": [
+          {
+            "name": "Venna Lake",
+            "info": "A popular spot for boating and picnics.",
+            "entry_fee": "Varies by activity",
+            "timings": "8:00 AM - 7:00 PM"
+          },
+          {
+            "name": "Pratapgad Fort",
+            "info": "A historic fort with panoramic views.",
+            "entry_fee": "Free",
+            "timings": "9:00 AM - 6:00 PM"
+          }
+        ],
+        "activities": ["Boating", "Sightseeing", "Trekking"],
+        "average_cost": "1500-2500 INR/day",
+        "duration": "2-3 days",
+        "nearest_airport": "Pune International Airport",
+        "nearest_railway_station": "Wathar Railway Station",
+        "local_cuisine": ["Strawberry Dishes", "Chikki", "Pithla Bhakri"],
+        "famous_events": ["Strawberry Festival"],
+        "travel_tips": [
+          "Carry warm clothing as temperatures can drop in the evenings.",
+          "Be cautious while driving on hilly roads."
+        ],
+        "emergency_contacts": {
+          "police": "100",
+          "ambulance": "108",
+          "tourist_helpline": "1800-11-1363"
+        },
+        "popular_hotels": ["Evershine Keys Prima Resort", "Brightland Resort & Spa", "Le Méridien Mahabaleshwar Resort & Spa"],
+        "transportation": ["Buses", "Auto-rickshaws", "Cabs"],
+        "safety_tips": [
+          "Follow safety guidelines while boating.",
+          "Be careful on steep and narrow roads."
+        ],
+        "accessibility": "Main attractions are accessible, but some areas may require additional support.",
+        "popular_routes": [
+          "Venna Lake -> Pratapgad Fort -> Mapro Garden",
+          "Arthur's Seat -> Elphinstone Point"
+        ],
+        "cultural_etiquette": "Respect local customs and maintain cleanliness at tourist spots.",
+        "weather_overview": "Mahabaleshwar has a pleasant climate during the summer, with heavy rainfall during the monsoon."
+      },
+      {
+        "name": "Alibaug",
+        "best_season": "November to February",
+        "image_src": ["al1.png", "al2.png", "al3.png"],
+        "places_to_visit": [
+          {
+            "name": "Alibaug Beach",
+            "info": "A serene beach ideal for relaxation and sunset views.",
+            "entry_fee": "Free",
+            "timings": "24/7"
+          },
+          {
+            "name": "Kolaba Fort",
+            "info": "A historic fort located off the coast.",
+            "entry_fee": "10 INR",
+            "timings": "10:00 AM - 6:00 PM"
+          }
+        ],
+        "activities": ["Beach Relaxation", "Fort Exploration", "Water Sports"],
+        "average_cost": "1000-2000 INR/day",
+        "duration": "1-2 days",
+        "nearest_airport": "Chhatrapati Shivaji Maharaj International Airport",
+        "nearest_railway_station": "Pen Railway Station",
+        "local_cuisine": ["Seafood", "Konkani Thali", "Vada Pav"],
+        "famous_events": ["Alibaug Beach Festival"],
+        "travel_tips": [
+          "Carry sun protection and stay hydrated.",
+          "Avoid visiting during the monsoon season."
+        ],
+        "emergency_contacts": {
+          "police": "100",
+          "ambulance": "108",
+          "tourist_helpline": "1800-11-1363"
+        },
+        "popular_hotels": ["Radisson Blu Resort & Spa", "U Tropicana Alibaug", "Coconut Beach Resort"],
+        "transportation": ["Ferries", "Buses", "Auto-rickshaws"],
+        "safety_tips": [
+          "Watch out for strong currents while swimming.",
+          "Secure your belongings while on the beach."
+        ],
+        "accessibility": "Beach areas and forts are generally accessible, but some might require additional support.",
+        "popular_routes": [
+          "Alibaug Beach -> Kolaba Fort -> Mandwa Beach",
+          "Kihim Beach -> Nagaon Beach"
+        ],
+        "cultural_etiquette": "Follow local beach guidelines and respect local customs.",
+        "weather_overview": "Alibaug experiences a tropical climate with a pleasant winter and heavy monsoon rains."
+      },
+      {
+        "name": "Khandala",
+        "best_season": "June to September",
+        "image_src": ["kan1.png", "kan2.png", "kan3.png"],
+        "places_to_visit": [
+          {
+            "name": "Lion's Point",
+            "info": "Offers breathtaking views of the surrounding valleys.",
+            "entry_fee": "Free",
+            "timings": "6:00 AM - 6:00 PM"
+          },
+          {
+            "name": "Tiger's Leap",
+            "info": "A scenic spot with a view of a valley and a waterfall.",
+            "entry_fee": "Free",
+            "timings": "6:00 AM - 6:00 PM"
+          }
+        ],
+        "activities": ["Sightseeing", "Nature Walks", "Photography"],
+        "average_cost": "1000-2000 INR/day",
+        "duration": "1-2 days",
+        "nearest_airport": "Pune International Airport",
+        "nearest_railway_station": "Khandala Railway Station",
+        "local_cuisine": ["Chikki", "Vada Pav", "Pithla Bhakri"],
+        "famous_events": ["Khandala Hill Festival"],
+        "travel_tips": [
+          "Wear comfortable footwear for walking and trekking.",
+          "Carry rain gear during the monsoon season."
+        ],
+        "emergency_contacts": {
+          "police": "100",
+          "ambulance": "108",
+          "tourist_helpline": "1800-11-1363"
+        },
+        "popular_hotels": ["Hilton Shillim Estate Retreat & Spa", "The Machan", "Fariyas Resort"],
+        "transportation": ["Buses", "Auto-rickshaws", "Cabs"],
+        "safety_tips": [
+          "Be cautious while visiting viewpoints during rainy weather.",
+          "Follow local guidelines for safe trekking."
+        ],
+        "accessibility": "Popular spots are accessible, but some viewpoints may involve climbing.",
+        "popular_routes": [
+          "Lion's Point -> Tiger's Leap -> Duke's Nose",
+          "Karla Caves -> Bhaja Caves"
+        ],
+        "cultural_etiquette": "Respect local environmental guidelines and avoid littering.",
+        "weather_overview": "Khandala enjoys cool temperatures during the monsoon and pleasant weather during the winter."
+      },
+      {
+        "name": "Kolhapur",
+        "best_season": "October to March",
+        "image_src": ["kol1.png", "kol2.png", "kol3.png"],
+        "places_to_visit": [
+          {
+            "name": "Mahalakshmi Temple",
+            "info": "A renowned temple dedicated to Goddess Mahalaxmi.",
+            "entry_fee": "Free",
+            "timings": "5:00 AM - 9:00 PM"
+          },
+          {
+            "name": "Panhala Fort",
+            "info": "A historic fort with panoramic views.",
+            "entry_fee": "Free",
+            "timings": "6:00 AM - 6:00 PM"
+          }
+        ],
+        "activities": ["Temple Visits", "Historical Exploration", "Shopping"],
+        "average_cost": "1000-2000 INR/day",
+        "duration": "2-3 days",
+        "nearest_airport": "Kolhapur Airport",
+        "nearest_railway_station": "Kolhapur Railway Station",
+        "local_cuisine": ["Kolhapuri Chappal", "Pithla Bhakri", "Kolhapuri Misal"],
+        "famous_events": ["Kolhapur Mahotsav"],
+        "travel_tips": [
+          "Carry comfortable footwear for exploring forts and temples.",
+          "Stay hydrated and carry water during site visits."
+        ],
+        "emergency_contacts": {
+          "police": "100",
+          "ambulance": "108",
+          "tourist_helpline": "1800-11-1363"
+        },
+        "popular_hotels": ["Hotel Silver Oak", "The Regency", "Hotel Royal Orchid"],
+        "transportation": ["Buses", "Auto-rickshaws", "Cabs"],
+        "safety_tips": [
+          "Be cautious while visiting isolated areas.",
+          "Follow local guidelines at religious sites."
+        ],
+        "accessibility": "Most sites are accessible, though some forts may involve walking.",
+        "popular_routes": [
+          "Mahalakshmi Temple -> Panhala Fort -> Rankala Lake",
+          "Jotiba Temple -> New Palace"
+        ],
+        "cultural_etiquette": "Respect local religious practices and dress modestly when visiting temples.",
+        "weather_overview": "Kolhapur has a tropical climate with hot summers, moderate monsoons, and pleasant winters."
+      },
+      {
+        "name": "Shirdi",
+        "best_season": "October to March",
+        "image_src": ["shir1.png", "shir2.png", "shir3.png"],
+        "places_to_visit": [
+          {
+            "name": "Sai Baba Temple",
+            "info": "A major pilgrimage site dedicated to Sai Baba.",
+            "entry_fee": "Free",
+            "timings": "4:00 AM - 11:00 PM"
+          },
+          {
+            "name": "Dwarkamai Masjid",
+            "info": "A historic mosque associated with Sai Baba.",
+            "entry_fee": "Free",
+            "timings": "4:00 AM - 11:00 PM"
+          }
+        ],
+        "activities": ["Pilgrimage", "Spiritual Retreat", "Shopping"],
+        "average_cost": "1000-2000 INR/day",
+        "duration": "1-2 days",
+        "nearest_airport": "Shirdi Airport",
+        "nearest_railway_station": "Sainagar Shirdi",
+        "local_cuisine": ["Pithla Bhakri", "Misal Pav", "Vada Pav"],
+        "famous_events": ["Sai Baba Palki Procession"],
+        "travel_tips": [
+          "Dress modestly while visiting religious sites.",
+          "Plan your visit around the temple's schedule to avoid long queues."
+        ],
+        "emergency_contacts": {
+          "police": "100",
+          "ambulance": "108",
+          "tourist_helpline": "1800-11-1363"
+        },
+        "popular_hotels": ["Hotel Sai Grand", "Sun N Sand", "Hotel Sai Moreshwar"],
+        "transportation": ["Auto-rickshaws", "Cabs", "Buses"],
+        "safety_tips": [
+          "Be mindful of your belongings in crowded areas.",
+          "Follow local guidelines while at religious sites."
+        ],
+        "accessibility": "Religious sites are accessible, but crowds may be dense during peak times.",
+        "popular_routes": [
+          "Sai Baba Temple -> Dwarkamai Masjid -> Chavadi",
+          "Shani Shingnapur -> Nashik"
+        ],
+        "cultural_etiquette": "Respect the local religious customs and maintain decorum at pilgrimage sites.",
+        "weather_overview": "Shirdi experiences hot summers, a rainy monsoon, and mild winters."
+      },
+      {
+        "name": "Ratnagiri",
+        "best_season": "November to March",
+        "image_src": ["rat1.png", "rat2.png", "rat3.png"],
+        "places_to_visit": [
+          {
+            "name": "Ganpatipule Beach",
+            "info": "A scenic beach known for its clear waters and Ganpati Temple.",
+            "entry_fee": "Free",
+            "timings": "24/7"
+          },
+          {
+            "name": "Ratnadurg Fort",
+            "info": "A historic fort offering views of the Arabian Sea.",
+            "entry_fee": "Free",
+            "timings": "6:00 AM - 6:00 PM"
+          }
+        ],
+        "activities": ["Beach Relaxation", "Historical Exploration", "Sightseeing"],
+        "average_cost": "1000-2000 INR/day",
+        "duration": "2-3 days",
+        "nearest_airport": "Ratnagiri Airport",
+        "nearest_railway_station": "Ratnagiri Railway Station",
+        "local_cuisine": ["Seafood", "Alphonso Mangoes", "Konkani Thali"],
+        "famous_events": ["Ratnagiri Mango Festival"],
+        "travel_tips": [
+          "Try local mangoes, especially during the season.",
+          "Be cautious while swimming and follow safety guidelines."
+        ],
+        "emergency_contacts": {
+          "police": "100",
+          "ambulance": "108",
+          "tourist_helpline": "1800-11-1363"
+        },
+        "popular_hotels": ["The Riverview Resort", "Hotel Ganpatipule", "Hotel Ratna Palace"],
+        "transportation": ["Buses", "Auto-rickshaws", "Cabs"],
+        "safety_tips": [
+          "Follow beach safety guidelines.",
+          "Keep valuables secure at the beach."
+        ],
+        "accessibility": "Tourist spots are generally accessible, though some areas may require assistance.",
+        "popular_routes": [
+          "Ganpatipule Beach -> Ratnadurg Fort -> Thibaw Palace",
+          "Marleshwar Temple -> Velneshwar Temple"
+        ],
+        "cultural_etiquette": "Respect local customs and avoid littering at beaches.",
+        "weather_overview": "Ratnagiri has a tropical climate with a hot summer, heavy monsoon, and pleasant winters."
+      },
+      {
+        "name": "Satara",
+        "best_season": "October to March",
+        "image_src": ["sat1.png", "sat2.png", "sat3.png"],
+        "places_to_visit": [
+          {
+            "name": "Kaas Plateau",
+            "info": "A UNESCO World Heritage site known for its biodiversity.",
+            "entry_fee": "50 INR",
+            "timings": "6:00 AM - 6:00 PM"
+          },
+          {
+            "name": "Rajwada",
+            "info": "A historic palace offering a glimpse into the region's royal past.",
+            "entry_fee": "20 INR",
+            "timings": "9:00 AM - 6:00 PM"
+          }
+        ],
+        "activities": ["Nature Exploration", "Historical Tours", "Photography"],
+        "average_cost": "1000-2000 INR/day",
+        "duration": "2-3 days",
+        "nearest_airport": "Pune International Airport",
+        "nearest_railway_station": "Satara Railway Station",
+        "local_cuisine": ["Kothimbir Vadi", "Misal Pav", "Bhakri"],
+        "famous_events": ["Kaas Plateau Flower Festival"],
+        "travel_tips": [
+          "Visit Kaas Plateau during the blooming season for the best experience.",
+          "Carry sun protection and stay hydrated."
+        ],
+        "emergency_contacts": {
+          "police": "100",
+          "ambulance": "108",
+          "tourist_helpline": "1800-11-1363"
+        },
+        "popular_hotels": ["Hotel Shreeyash", "Kasturi Hotel", "Hotel Balaji"],
+        "transportation": ["Buses", "Auto-rickshaws", "Cabs"],
+        "safety_tips": [
+          "Follow guidelines while exploring natural sites.",
+          "Stay on marked paths to avoid accidents."
+        ],
+        "accessibility": "Sites are generally accessible with proper care needed for natural areas.",
+        "popular_routes": [
+          "Kaas Plateau -> Rajwada -> Thoseghar Waterfalls",
+          "Sajjangad Fort -> Ajinkyatara Fort"
+        ],
+        "cultural_etiquette": "Respect local customs and environmental guidelines during your visit.",
+        "weather_overview": "Satara has a tropical climate with hot summers, moderate monsoon, and pleasant winters."
+      },
+      {
+        "name": "Latur",
+        "best_season": "November to March",
+        "image_src": ["lat1.png", "lat2.png", "lat3.png"],
+        "places_to_visit": [
+          {
+            "name": "Maharashtra Mandir",
+            "info": "A historic temple known for its architecture.",
+            "entry_fee": "Free",
+            "timings": "6:00 AM - 6:00 PM"
+          },
+          {
+            "name": "Ganj Golai",
+            "info": "A vibrant market area known for local goods.",
+            "entry_fee": "Free",
+            "timings": "9:00 AM - 8:00 PM"
+          }
+        ],
+        "activities": ["Local Market Exploration", "Temple Visits", "Cultural Experiences"],
+        "average_cost": "1000-2000 INR/day",
+        "duration": "1-2 days",
+        "nearest_airport": "Nanded Airport",
+        "nearest_railway_station": "Latur Railway Station",
+        "local_cuisine": ["Jowar Bhakri", "Misal Pav", "Pithla"],
+        "famous_events": ["Latur Festival"],
+        "travel_tips": [
+          "Explore the local markets for authentic experiences.",
+          "Stay hydrated and carry water during excursions."
+        ],
+        "emergency_contacts": {
+          "police": "100",
+          "ambulance": "108",
+          "tourist_helpline": "1800-11-1363"
+        },
+        "popular_hotels": ["Hotel Yash", "Hotel Samrat", "Hotel Chintamani"],
+        "transportation": ["Auto-rickshaws", "Cabs", "Buses"],
+        "safety_tips": [
+          "Be cautious in crowded market areas.",
+          "Follow local guidelines during temple visits."
+        ],
+        "accessibility": "Most sites are easily accessible with proper transport options available.",
+        "popular_routes": [
+          "Maharashtra Mandir -> Ganj Golai -> Latur Fort",
+          "Aundha Nagnath Temple -> Kharosa Caves"
+        ],
+        "cultural_etiquette": "Respect local customs and dress modestly while visiting temples.",
+        "weather_overview": "Latur has a dry climate with hot summers and mild winters."
+      }
+     
+    ]
+  }
+  

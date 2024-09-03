@@ -1,0 +1,140 @@
+
+
+:root {
+    --primary-color: #FF9933;
+    --secondary-color: #138808;
+    --accent-color: #000080;
+    --light-color: #F5F5F5;
+    --dark-color: #333333;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--dark-color);
+}
+
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar-brand, .nav-link {
+    color: var(--light-color) !important;
+}
+
+.loc{
+    width: 80%;
+    margin-left:160px ;
+    
+}
+.loc img{
+    aspect-ratio: 16/9;
+    
+}
+
+.navbar-nav .nav-item .nav-link {
+    transition: all 0.3s ease;
+  }
+
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #f8c31c; /* Change text color on hover */
+    text-decoration: underline; /* Underline the text on hover */
+  }
+
+  /* Optional: add a background color change on hover */
+  .navbar-nav .nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight background change */
+  }
+  body {
+    font-family: 'Poppins', sans-serif; /* Custom font */
+  }
+  
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.6); /* Darker background for better readability */
+    padding: 25px;
+    border-radius: 15px;
+    animation: fadeInUp 1s ease; /* Smooth caption entry */
+  }
+  
+  .carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f8f9fa; /* Light color for text */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow */
+  }
+  
+  .carousel-caption p {
+    font-size: 1.25rem;
+    color: #f8f9fa; /* Light color for text */
+  }
+  
+  .carousel-inner img {
+    filter: brightness(80%) contrast(110%); /* Slightly darker with higher contrast */
+    transition: transform 0.7s ease-in-out, filter 0.7s ease-in-out; /* Smooth zoom and filter transitions */
+  }
+  
+  .carousel-inner img:hover {
+    transform: scale(1.1); /* More pronounced zoom effect */
+    filter: brightness(90%) contrast(120%); /* Brighter and more contrast on hover */
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    /* Custom white background for controls */
+    border-radius: 50%; /* Rounded controls */
+    padding: 10px;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5)); /* Drop shadow for depth */
+  }
+  
+
+  
+
+  @keyframes fadeInUp {
+    from {
+      transform: translate3d(0, 40px, 0);
+      opacity: 0;
+    }
+    to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+  
+  #about h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #343a40;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  #about p {
+    font-family: 'Roboto', sans-serif;
+    color: #6c757d;
+    line-height: 1.7;
+  }
+  
+  #maharashtraCarousel .carousel-inner img {
+    border-radius: 15px;
+    filter: brightness(85%);
+  }
+  
+  #scrollPages .carousel-inner {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background: #fff;
+  }
+  
+  #scrollPages .carousel-inner .carousel-item {
+    min-height: 250px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  #scrollPages .carousel-inner .carousel-item h5 {
+    color: #007bff;
+    font-weight: 600;
+  }
+  
+  #scrollPages .carousel-inner .carousel-item p {
+    color: #495057;
+  }
+  
