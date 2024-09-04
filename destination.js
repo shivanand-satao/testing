@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   const params = new URLSearchParams(window.location.search);
-  const destinationId = params.get('destination'); // e.g., "mumbai"
+  const destinationId = params.get('destination'); 
 
   fetch('index.json')
       .then(response => response.json())
