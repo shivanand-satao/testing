@@ -3,7 +3,7 @@
       {
         "name": "Mumbai",
         "best_season": "October to February",
-        "image_src": ["mum1.png", "mum2.png", "mum3.png"],
+        "image_src": ["mum1.png", ".mum2.png", "mum3png"],
         "places_to_visit": [
           {
             "name": "Gateway of India",
