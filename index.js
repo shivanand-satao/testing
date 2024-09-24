@@ -146,6 +146,66 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Append card to the container
                 cardContainer.appendChild(card);
             });
+
+
+
+            jquery();//gdfghsdghdfhgfhdghghgdh
+           
+
+
+
+
         })
+
         .catch(error => console.error('Error fetching JSON data:', error));
 });
+
+
+function jquery() {
+    $(document).ready(function() {
+        // Handle hover events on navbar items
+        $('.nav-link').hover(function(event) {
+            // Get the info from data attribute
+            var info = $(this).data('info');
+
+            // Set the tooltip text and position it
+            $('#infoTooltip').text(info)
+                .css({
+                    top: event.pageY + 10 + 'px', // Position below the mouse
+                    left: event.pageX + 10 + 'px' // Position slightly to the right
+                })
+                .fadeIn(200); // Fade in the tooltip
+        }, function() {
+            // Hide the tooltip when not hovering
+            $('#infoTooltip').fadeOut(200);
+        });
+    });
+    $(document).ready(function() {
+        // Existing hover code for navbar items
+
+        // Handle form submission
+        $('#contactForm').on('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Show thank you message
+            alert('Thank you for your message! We will get back to you soon.');
+
+            // Optionally, clear the form fields
+            $(this).trigger('reset');
+        });
+    });
+    $(document).ready(function() {
+        $('a.nav-link').on('click', function(event) {
+            event.preventDefault();
+            const target = $(this).attr('href');
+            $('html, body').animate({
+                scrollTop: $(target).offset().top
+            }, 2000);
+        });
+    });
+    $(document).ready(function() {
+        $('#card-container').hide(); // Hide initially
+        $('#card-container').fadeIn(10000); // Fade in after loading
+    });
+    
+}
